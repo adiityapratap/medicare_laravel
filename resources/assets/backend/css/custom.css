@@ -1,0 +1,21 @@
+.badge {display: inline-block; min-width: 9px; padding: 0px 7px 2px; font-size: 10px; font-weight: 700; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: middle; background-color: #777; border-radius: 10px; margin: 0px 2px; }
+
+
+.table tr td, 
+.table tr th  						{ border: none; padding: 5px; text-align: center; }
+.table input 						{ width: 60px; display: block; margin: 0px auto; }
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {  -webkit-appearance: none;  margin: 0; }
+input[type=number] 					{-moz-appearance:textfield !important;}
+.table tr th 						{ font-size: 14px; }
+.table tr td 						{ font-size: 12px; }
+.table table tr th,
+.table table tr td 					{ width: 90px; }
+.table table tr td.absent-col 		{ width: 30px; }
+
+.table-container 					{ margin:  0px 10px; }
+.table p 							{ line-height: 35px; margin: 0; }
+.table input[type=checkbox]			{ margin: 5px 0px; width: 30px; }
+.table > tbody > tr 				{ border-top: 1px solid #cfcfcf; }
+
+.audio-tag { outline: none !important; text-decoration: none;}

@@ -1,0 +1,6 @@
+*
+!/public
+!/public/images
+!/public/homework
+!/public/homework_submissions
+!.gitignore

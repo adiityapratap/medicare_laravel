@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+.admticket {
+    background: #fff;
+}
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+header {
+    text-align: center;
+    padding: 10px 10px;
+}
+header .header-title h1 {
+    font-size: 18px;
+    margin: 0px;
+}
+main.content {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+main.content .student-details > div {
+    vertical-align: middle;
+}
+
+main.content .one-third {
+    display: inline-block;
+    width: 25%;
+}
+main.content .two-third {
+    display: inline-block;
+    width: 73%;
+}
+.personal-info table tr th {
+    font-size: 15px;
+    /*line-height: 18px;*/
+    text-align: left;
+    font-weight: 500;
+}
+.personal-info table tr td.dd {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+.personal-info table tr td {
+    font-size: 15px;
+    font-weight: 600;
+}
+.imageplaceholder {
+    width: 85px;
+    margin: 0px auto;
+    font-size: 12px;
+    text-align: justify;
+    padding: 20px 10px;
+    display: block;
+    border: 2px solid #5a5a5a;
+}
+.student-details {
+    margin-bottom: 10px;
+    display: block;
+}
+.student-timetable .title h4 {
+    margin-top: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.student-timetable .title h2 {
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px !important;
+}
+.student-timetable .title {
+    text-align: center;
+}
+.timetablesection table {
+    border: 1px solid;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+}
+.timetablesection table th {
+    width: 33%;
+}
+.imp-notes p {
+    font-size: 14px;
+    margin: 1px;
+    font-weight: 400;
+}
+footer {
+    padding: 0 10px 10px;
+}
+.student-sign {
+    float: right;
+}
+.student-sign p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.student-sign .signbox {
+    /*background: #fbfbfb;*/
+    height: 60px;
+    margin-top: 0px;
+}
+.student-sign p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+</style>
+</head>
+<body>
+    <div class="admticket card"> <!-- outer div starts -->
+        <div class="container"> <!-- container starts -->
+            <header>
+                <div class="logo"> <!-- logo starts --> 
+                    <img src="data:image/png;base64,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" />
+                </div> <!-- logo ends -->
+                <div class="header-title"> <!-- header title starts -->
+                    <h1>SPRINKLEWAY EXAMINATION, 2019<br />ADMISSION TICKET</h1>
+                </div> <!-- header title ends -->
+            </header> <!-- header ends -->
+            <main class="content"> <!-- main content area starts -->
+                <div class="student-details"> <!-- personal info starts -->
+                    <div class="two-third personal-info"> 
+                        <table>
+                            <tr>
+                                <th>Examination Center</th>
+                                <td class="dd"> : </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Registration Number</th>
+                                <td class="dd"> : </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Name of Candidate</th>
+                                <td class="dd"> : </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Date of Birth</th>
+                                <td class="dd"> : </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div> <!-- personal info ends -->
+                    <div class="one-third student-picture"> <!-- student image section starts -->
+                        <div class="imageplaceholder">
+                            <p>Passport Size Photograph of the Candidate to be pasted here.</p>
+                        </div>
+                    </div> <!-- student image section ends -->
+                </div> <!-- student details section ends -->
+                <div class="student-timetable"> <!-- subjects timetable starts -->
+                    <div class="timetablesection"> <!-- timetablesection starts -->
+                        <table width="100%" cellspacing="0" border="1">
+                            <tr>
+                                <th colspan="3">Date and Time<sup>*</sup></th>
+                                <th>Subject</th>
+                                <th>Invigilators Signature</th>
+                            </tr> <!-- heading row ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 1 ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 2 ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 3 ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 4 ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 5 ends -->
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr> <!-- data row 6 ends -->
+                        </table>
+                    </div> <!-- timetablesection ends -->
+                    <div class="imp-notes"> <!-- imp-notes starts -->
+                        <p class="examNote"></p>
+                    </div> <!-- imp-notes ends -->
+                </div> <!-- subject time table ends -->
+            </main> <!-- main content ends here -->
+            <footer> <!-- footer starts -->
+                <div class="student-sign"> <!-- student sign starts -->
+                    <div class="signbox">&nbsp;</div>
+                    <p>Signature of the Candidate</p>
+                </div> <!-- student sign ends -->
+            </footer> <!-- footer ends -->
+        </div> <!-- container ends -->
+    </div> <!-- outer div ends -->
+
+</body>
+</html>

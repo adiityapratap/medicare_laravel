@@ -1,0 +1,3 @@
+name,username,dob,pob,gender,class_id,section_id,roll_no,shift,card_no,religion,caste,castecategory,monther_tongue,nationalid,blood_group,nationality,photo,email,password,phone_no,extra_activity,note,father_name,father_phone_no,mother_name,mother_phone_no,guardian,guardian_phone_no,present_address,permanent_address,need_transport,transport_zone
+Jegan,jegan235,25/05/1991,,1,1,2,12,Day,1122,2,,,,,2,indian,,jegan235@mail.com,123456,9876543212,test,test,Raman,9876543213,kala,9876543219,Raman,9876543213,test address,test address,,
+Jegan,jegan325,25/05/1991,,1,1,2,12,Day,1122,2,,,,,2,indian,,jegan325@mail.com,123456,9876543212,test,test,Raman,9876543213,kala,9876543219,Raman,9876543213,test address,test address,,
